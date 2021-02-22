@@ -1,0 +1,16 @@
+#home-page {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+
+  background: #313131;
+  mix-blend-mode: normal;
+  position: relative;
+}
+
+#home-page img {
+  width: 1980px;
+  height: 1080px;
+  user-select: none;
+  position: fixed;
+}
