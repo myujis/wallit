@@ -2,6 +2,7 @@ import "../styles/home-page.css";
 import Header from "../components/Header/header";
 import Transactions from "../components/Transactions/transactions";
 import styled from "styled-components";
+import DiaryLimit from '../components/DiaryLimit/diarylimit';
 
 function HomePage() {
   return (
@@ -9,8 +10,7 @@ function HomePage() {
       <Header />
       <Container>
         <Transactions />
-        <Transactions />
-        <Transactions />
+        <DiaryLimit limit={256.00} available={120.00}/>
       </Container>
     </Body>
   );
@@ -21,7 +21,11 @@ const Body = styled.div`
   width: 100vw;
   height: 100vh;
   position: relative;
-  overflow: hidden;
+  overflow-y: auto;
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  overflow-x: hidden;
 `;
 
 const Container = styled.div`

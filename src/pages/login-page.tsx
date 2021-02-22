@@ -1,4 +1,6 @@
 import "../styles/login-page.css";
+import styled from 'styled-components';
+import Login from "../components/Login/login"
 
 interface LoginData {
   username: string;
@@ -7,30 +9,18 @@ interface LoginData {
 
 function LoginPage() {
   return (
-    <div id="login-page">
-      <div className="container">
-        <h1>Entrar</h1>
-        <form>
-          <input
-            type="text"
-            id="username"
-            name="username"
-            placeholder="Username"
-            required
-            className="input"
-          />
-          <input
-            type="password"
-            id="password"
-            name="password"
-            placeholder="Password"
-            required
-            className="input"
-          />
-          <input type="submit" value="Confirm" className="button" />
-        </form>
-      </div>
-    </div>
+    <Body>
+      <Login/>
+    </Body>
   );
 }
 export default LoginPage;
+
+const Body = styled.div`
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/background-geometry.png");
+`;
