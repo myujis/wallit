@@ -1,6 +1,6 @@
 import "../styles/login-page.css";
-import styled from 'styled-components';
-import Login from "../components/Login/login"
+import styled from "styled-components";
+import Login from "../components/Login/login";
 
 interface LoginData {
   username: string;
@@ -10,7 +10,7 @@ interface LoginData {
 function LoginPage() {
   return (
     <Body>
-      <Login/>
+      <Login />
     </Body>
   );
 }

@@ -1,5 +1,4 @@
-import styled from 'styled-components';
-
+import styled from "styled-components";
 
 export const Root = styled.div`
   width: 450px;
@@ -15,7 +14,7 @@ export const Form = styled.form`
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content flex-end;
+  justify-content: flex-end;
   align-items: center;
 `;
 
@@ -45,7 +44,7 @@ export const Button = styled.button`
 
   font-weight: 500;
   font-size: 1.3em;
-  &:hover{
+  &:hover {
     background: #66ff92;
     cursor: pointer;
   }
@@ -56,8 +55,7 @@ export const Title = styled.img`
   max-width: 80%;
   user-select: none;
   -webkit-user-drag: none;
-  position:absolute;
-  top:0;
-  margin:20px;
-
+  position: absolute;
+  top: 0;
+  margin: 20px;
 `;

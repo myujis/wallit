@@ -6,7 +6,7 @@ export const Root = styled.div`
   background: rgba(209, 209, 209, 0.4);
   border-radius: 10px;
   margin: 10px;
-  display: inline-block;
+  display: flex;
   flex-direction: column;
   position: relative;
   overflow-y: auto;

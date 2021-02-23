@@ -1,18 +1,17 @@
 import styled from "styled-components";
 
 export const Root = styled.div`
-  width: 300px;
+  width: 850px;
   height: 350px;
   background: rgba(209, 209, 209, 0.4);
   border-radius: 10px;
   margin: 10px;
-  display: inline-block;
+  display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+
   position: relative;
-  overflow-y: auto;
-  ::-webkit-scrollbar {
-    display: none;
-  }
 `;
 
 export const Head = styled.div`
@@ -37,17 +36,14 @@ export const Head = styled.div`
   }
 `;
 
-export const ItemList = styled.div`
-  width: 100%;
-  height: calc(100% - 65px);
-  display: inline-block;
-  flex-direction: column;
+export const Body = styled.div`
+  width: calc(100% - 10px - 10px);
+  height: calc(100% - 65px - 20px);
+  background: white;
+  margin: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
   align-items: center;
-  position: absolute;
-  bottom: 0;
-
-  overflow-y: auto;
-  ::-webkit-scrollbar {
-    display: none;
-  }
+  user-select: none;
 `;

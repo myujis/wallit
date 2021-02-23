@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Item = styled.div`
   width: 280px;
@@ -8,15 +8,15 @@ export const Item = styled.div`
   margin: 10px;
   position: relative;
   transition: 0.2s ease-in-out;
-  -webkit-box-shadow: 0px 13px 26px -3px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0px 13px 26px -3px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 13px 26px -3px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 13px 20px -3px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 13px 20px -3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 13px 20px -3px rgba(0, 0, 0, 0.1);
 
   &:hover {
     transform: translateY(-2px);
-    -webkit-box-shadow: 0px 13px 26px -3px rgba(0, 0, 0, 0.4);
-    -moz-box-shadow: 0px 13px 26px -3px rgba(0, 0, 0, 0.4);
-    box-shadow: 0px 13px 26px -3px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0px 10px 20px -3px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 10px 20px -3px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 10px 20px -3px rgba(0, 0, 0, 0.2);
     cursor: pointer;
   }
 `;
@@ -31,7 +31,7 @@ export const Info = styled.div`
   left: 10px;
   top: 10px;
 
-  user-select:none;
+  user-select: none;
 `;
 
 export const Name = styled.span`
@@ -55,8 +55,9 @@ export const Number = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  user-select:none;
+  user-select: none;
 
   color: #38e86a;
   font-weight: bold;
+  font-size: 1.2em;
 `;
