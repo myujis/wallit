@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const Root = styled.div`
-  width: 300px;
-  height: 280px;
+  width: 95%;
+  height: 40%;
   background: rgba(209, 209, 209, 0.4);
   border-radius: 10px;
   margin: 10px;
@@ -43,7 +43,7 @@ export const Title = styled.div`
 
 export const Body = styled.div`
   height: calc(100% - 85px);
-  width: 280px;
+  width: calc(100% - 10px - 10px);
   background: #ffffff;
   border-radius: 10px;
   margin: 10px;
@@ -63,6 +63,7 @@ export const Limit = styled.div`
   width: 100%;
   height: 35%;
   display: flex;
+  justify-self:self-start;
   align-items: center;
 `;
 export const Text = styled.span`
@@ -83,14 +84,12 @@ export const Total = styled.span`
 export const Divider = styled.div`
   width: 80%;
   height: 1px;
-  position: absolute;
-  top: 70px;
-  background-color: rgba(209, 209, 209);
+  background-color: rgba(209, 209, 209,0.5);
 `;
 
 export const Container = styled.div`
   height: calc(100% - 35%);
-  width: auto;
+  width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -105,16 +104,12 @@ export const Description = styled.div`
   font-size: 1em;
   font-weight: 600;
   margin: 10px;
-  position: absolute;
-  bottom: 80px;
 `;
 
 export const Number = styled.div`
   color: #38e86a;
   font-weight: bold;
   font-size: 2.5em;
-  position: absolute;
-  bottom: 40px;
 `;
 
 export const AvailableBar = styled.div`
@@ -122,18 +117,14 @@ export const AvailableBar = styled.div`
   height: 20px;
   border-radius: 20px;
   background-color: #38e86a;
-  position: absolute;
-  left: 0px;
   z-index: 1;
 `;
 
 export const TotalBar = styled.div`
   height: 20px;
-  width: 80%;
+  width: 100%;
   margin: 10px;
   border-radius: 20px;
   background-color: rgba(209, 209, 209, 1);
-  position: absolute;
-  bottom: 10px;
   z-index: 0;
 `;

@@ -9,11 +9,11 @@ function Transactions() {
     <Root>
       <Head>Transações</Head>
       <ItemList>
-        <TransactionsItem name="Kikao" type="Alimentação" number={-61.0} />
-        <TransactionsItem name="Alvorada" type="Alimentação" number={-45.56} />
-        <TransactionsItem name="Bar" type="Entretenimento" number={-89.32} />
-        <TransactionsItem name="Cinema" type="Entretenimento" number={-35.0} />
-        <TransactionsItem name="Bolice" type="Entretenimento" number={-60.0} />
+        <TransactionsItem name="Kikao" type="Alimentação" date="13:30 23/02/2021" number={-61.0} />
+        <TransactionsItem name="Alvorada" type="Alimentação" date="13:30 23/02/2021" number={-45.56} />
+        <TransactionsItem name="Bar" type="Entretenimento" date="13:30 23/02/2021" number={-89.32} />
+        <TransactionsItem name="Cinema" type="Entretenimento" date="13:30 23/02/2021" number={-35.0} />
+        <TransactionsItem name="Bolice" type="Entretenimento" date="13:30 23/02/2021" number={-60.0} />
       </ItemList>
     </Root>
   );

@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const Root = styled.div`
-  width: 300px;
-  height: 280px;
+  width: 95%;
+  height: calc(40%);
   background: rgba(209, 209, 209, 0.4);
   border-radius: 10px;
   margin: 10px;

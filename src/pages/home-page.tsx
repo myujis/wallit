@@ -50,7 +50,7 @@ const Container = styled.div`
 
 const Column = styled.div`
   height: 100%;
-  width: auto;
+  width: 16%;
   display: flex;
   flex-direction: column;
 `;

@@ -1,10 +1,11 @@
-import Transactions from "../Transactions/transactions";
-import { Item, Info, Name, Type, Number } from "./styled";
+import { Item, Info, Name, Type, Number, Row, Date } from "./styled";
+import moment from 'moment';
 
 interface Props {
   name: string;
   type: string;
   number: number;
+  date: string;
 }
 
 function TransactionsItem(props: Props) {
@@ -13,7 +14,7 @@ function TransactionsItem(props: Props) {
   return (
     <Item>
       <Info>
-        <Name>{props.name}</Name>
+        <Row><Name>{props.name}</Name><Date>{props.date}</Date></Row>
         <Type>{props.type}</Type>
       </Info>
       <Number style={{ color: `${color}` }}>

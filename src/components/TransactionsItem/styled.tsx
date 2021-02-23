@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Item = styled.div`
-  width: 280px;
+  width: calc(100% - 10px - 10px);
   height: 70px;
   background: #ffffff;
   border-radius: 10px;
@@ -40,10 +40,27 @@ export const Name = styled.span`
   color: black;
 `;
 
+export const Row = styled.div`
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  align-items:center;
+  width:100%;
+  height:auto;
+`;
+
 export const Type = styled.span`
   font-weight: 400;
   font-size: 1em;
   color: black;
+`;
+
+export const Date = styled.span`
+  font-weight: 300;
+  font-size: 0.9em;
+  max-width:70px;
+  color: rgba(0,0,0,0.4);
+  margin-right:10px;
 `;
 
 export const Number = styled.div`

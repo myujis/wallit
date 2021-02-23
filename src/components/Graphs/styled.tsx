@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Root = styled.div`
   width: 850px;
-  height: 350px;
+  height: 50%;
   background: rgba(209, 209, 209, 0.4);
   border-radius: 10px;
   margin: 10px;
@@ -42,8 +42,45 @@ export const Body = styled.div`
   background: white;
   margin: 10px;
   border-radius: 10px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:relative;
+
+  
+`;
+
+export const Container = styled.div`
+  height:340px;
   display: flex;
-  justify-content: space-around;
+  flex-direction:row;
   align-items: center;
   user-select: none;
+  overflow-x:scroll;
+  overflow-y:hidden;
+  &::-webkit-scrollbar {
+    height:10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: none; 
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba(209, 209, 209, 0.1);
+    border-radius: 20px;   
+  }
+  &:hover::-webkit-scrollbar-thumb{
+    background-color: rgba(209, 209, 209, 0.7); 
+  }
+  &::-webkit-scrollbar-thumb:hover{
+    background-color: rgba(180, 180, 180);
+
+  }
+`;
+
+export const Title = styled.h1`
+  font-size:6em;
+  z-index:2;
+  color:red;
 `;

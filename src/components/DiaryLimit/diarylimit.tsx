@@ -13,7 +13,6 @@ import {
   Title,
   Container,
 } from "./styled";
-import styled from "styled-components";
 
 interface Props {
   limit: number;
